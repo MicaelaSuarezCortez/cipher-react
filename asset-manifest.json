@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.js": "/cipher-react/static/js/main.60e1e9bb.chunk.js",
-    "main.js.map": "/cipher-react/static/js/main.60e1e9bb.chunk.js.map",
+    "main.js": "/cipher-react/static/js/main.20e96641.chunk.js",
+    "main.js.map": "/cipher-react/static/js/main.20e96641.chunk.js.map",
     "runtime-main.js": "/cipher-react/static/js/runtime-main.f2a219a9.js",
     "runtime-main.js.map": "/cipher-react/static/js/runtime-main.f2a219a9.js.map",
     "static/js/2.3815a425.chunk.js": "/cipher-react/static/js/2.3815a425.chunk.js",
     "static/js/2.3815a425.chunk.js.map": "/cipher-react/static/js/2.3815a425.chunk.js.map",
     "index.html": "/cipher-react/index.html",
-    "precache-manifest.298ccc916852c0914c83a1ccc4d33bf3.js": "/cipher-react/precache-manifest.298ccc916852c0914c83a1ccc4d33bf3.js",
+    "precache-manifest.7bc60b50cca6acf55f26ccb4b0f83784.js": "/cipher-react/precache-manifest.7bc60b50cca6acf55f26ccb4b0f83784.js",
     "service-worker.js": "/cipher-react/service-worker.js"
   },
   "entrypoints": [
     "static/js/runtime-main.f2a219a9.js",
     "static/js/2.3815a425.chunk.js",
-    "static/js/main.60e1e9bb.chunk.js"
+    "static/js/main.20e96641.chunk.js"
   ]
 }
