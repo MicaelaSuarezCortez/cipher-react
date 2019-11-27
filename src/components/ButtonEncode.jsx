@@ -1,8 +1,8 @@
 import React from 'react'
 
-const ButtonEncode = () => {
+const ButtonEncode = (props) => {
     return(
-        <button className="btn btn-primary mr-3">Cifrar</button>
+        <button onClick= {props.data} className="btn btn-primary mr-3">Cifrar</button>
     )
 }
 export default ButtonEncode

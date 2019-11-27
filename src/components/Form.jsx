@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 
-import ButtonEncode from './ButtonDecode'
-import ButtonDecode from './ButtonEncode';
+import ButtonEncode from './ButtonEncode'
+import ButtonDecode from './ButtonDecode';
 
 
 class Form extends Component {
@@ -9,36 +9,37 @@ class Form extends Component {
     createRefInputText = React.createRef();
     createRefInputOffset = React.createRef();
 
-    inputText = (e) => {
+    data = (e) => {
         e.preventDefault();
-        const valueInput = this.createRef.current.value;
-        console.log(valueInput);        
-    }
-
-    inputOffset = (e) => {
-        e.preventDefault();
+        const valueInput = this.createRefInputText.current.value;
         const valueOffset = this.createRefInputOffset.current.value;
-        console.log(valueOffset);        
+        this.props.encode(valueOffset, valueInput)
+        console.log(valueOffset, valueInput);        
     }
 
     render() {
         return (
 
-            <form onSubmit={this.inputText}>
+            <form>
                 <div className="form-group">
                     <div className="col-md-6 mx-auto">
-                        <input ref={this.createRef} className="form-control " type="text" id="inputText" />
+                        <input ref={this.createRefInputText} className="form-control " type="text" id="inputText" />
                     </div>
                     <div className="col-md-6 mx-auto my-3">
-                        <input type="number" className="form-control" />
+                        <input ref = {this.createRefInputOffset} type="number" className="form-control" />
                     </div>
-                    <div className="text-center ">
-                    <ButtonDecode />
-                    <ButtonEncode />
+                    <div className="text-center">
+                    <ButtonEncode 
+                   data = {this.data}                   
+                    />
+                    <ButtonDecode                     
+                 
+                    />
+                  
                         
                     </div>
                     <div className="text-center my-3">
-                        <label htmlFor="inputText">Codigo</label>
+                        <label htmlFor="inputText">{this.props.resultado}</label>
                     </div>
                 </div>
             </form>
