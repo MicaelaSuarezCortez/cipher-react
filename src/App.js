@@ -33,6 +33,25 @@ class App extends Component {
     }        
   } 
   
+  decode = (offset, string) => {
+    let arrayText = [];
+    let inputText = string;
+    let inputOffset = parseInt(offset);
+
+    for (let i = 0; i < inputText.length; i++) {
+      let charCodeToAscii = inputText[i].charCodeAt(); 
+      let position = (charCodeToAscii - 90 - inputOffset) % 26 + 90;
+      console.log('Position:' + position);
+      let asciiToChar = String.fromCharCode(position)
+      arrayText.push(asciiToChar);    
+      console.log('word:' + asciiToChar);
+      this.setState({
+        texto: inputText,
+        offset:inputOffset,
+        resultado: arrayText 
+      })
+    }
+  }
   render(){
     return (
       <div className="container">
@@ -42,7 +61,8 @@ class App extends Component {
           </h1>
           </header>
         <Form 
-        encode = {this.encode}   
+        encode = {this.encode}  
+        decode = {this.decode} 
         resultado = {this.state.resultado}  
         offset = {this.state.offset}
         />       

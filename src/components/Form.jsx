@@ -9,12 +9,21 @@ class Form extends Component {
     createRefInputText = React.createRef();
     createRefInputOffset = React.createRef();
 
-    data = (e) => {
+    dataEncode = (e) => {
         e.preventDefault();
         const valueInput = this.createRefInputText.current.value;
         const valueOffset = this.createRefInputOffset.current.value;
         this.props.encode(valueOffset, valueInput)
         console.log(valueOffset, valueInput);        
+    }
+
+    dataDecode = (e) => {
+        e.preventDefault();
+        const valueInput = this.createRefInputText.current.value;
+        const valueOffset = this.createRefInputOffset.current.value;
+        this.props.decode(valueOffset, valueInput)
+        console.log(valueOffset, valueInput);
+        
     }
 
     render() {
@@ -30,10 +39,10 @@ class Form extends Component {
                     </div>
                     <div className="text-center">
                     <ButtonEncode 
-                   data = {this.data}                   
+                   dataEncode = {this.dataEncode}                   
                     />
                     <ButtonDecode                     
-                 
+                    dataDecode = {this.dataDecode}
                     />
                   
                         

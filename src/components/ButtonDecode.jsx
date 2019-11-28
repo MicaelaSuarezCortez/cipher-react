@@ -1,8 +1,8 @@
 import React from 'react'
 
-const ButtonDecode = () => {
+const ButtonDecode = (props) => {
     return(
-        <button className="btn btn-primary">Descifrar</button>
+        <button onClick = {props.dataDecode} className="btn btn-primary w-">Descifrar</button>
     )
 }
 export default ButtonDecode
