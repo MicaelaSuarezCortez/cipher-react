@@ -1,0 +1,26 @@
+.image {
+    width: 90%;
+    height: 90%;
+  }
+  .frase {
+    color: #ffffff;
+    font-size: 15px;   
+    letter-spacing: 3px;
+  }
+  .header{
+    color: #9962B3;
+  }
+  .button {
+    width: 100px;
+  }
+  .aside{
+    background-color: #70cca0;
+  }
+  .label{
+    color:  #9962B3;
+   font-weight: bolder;
+  }
+  .span{
+    font-size: 14px;
+  }
+  
