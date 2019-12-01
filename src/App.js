@@ -74,13 +74,16 @@ class App extends Component {
     let arrayText = [];
     let inputText = string;
     let inputOffset = parseInt(offset);
-    console.log('offset:' + inputOffset);
+  
 
     let valueSpanText = document.getElementById('spanText');
     let valueSpanOffset = document.getElementById('spanOffset');
+    let valueInputHistoriaClinica = document.getElementById('inputHistoriaClinica');
+    let valueSpanHistoriaClinica = document.getElementById('spanHistoria');
 
-    if(inputText.length < 1){
-      valueSpanText.innerHTML = 'Debes ingresar letras de la "A-Z" o "a-z';       
+    if(inputText.length < 1 || valueInputHistoriaClinica.length < 1){
+      valueSpanText.innerHTML = 'Debes ingresar letras de la "A-Z" o "a-z';      
+      valueSpanHistoriaClinica.innerHTML ='No se aceptan campos vacíos'; 
     } 
     else if (/^([0-9])*$/.test(inputText)){
       valueSpanText.innerHTML = 'Solo letras de la "A-Z" o "a-z'
