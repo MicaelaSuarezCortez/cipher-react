@@ -133,11 +133,11 @@ class App extends Component {
             </div>
             <div className="col-xs-12 col-sm-9">
               <header className="mx-auto text-center">               
-                <h2 className="header my-4">
+                <span className="header my-4">
                 Repositorio de Historias Clínicas
-                </h2>
+                </span>
                 <figure>
-                  <img  src="https://user-images.githubusercontent.com/45082005/69832301-77a53280-11fb-11ea-88dc-991499006afb.PNG" alt="portada" />
+                  <img  src="https://user-images.githubusercontent.com/45082005/69832301-77a53280-11fb-11ea-88dc-991499006afb.PNG" alt="portada" className="rounded"/>
                 </figure>
               </header>
               <Form 

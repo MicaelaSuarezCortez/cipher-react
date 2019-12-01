@@ -36,11 +36,11 @@ class Form extends Component {
                         <span className="d-block text-warning text-center span" id="spanHistoria"></span>
                     </div>
                     <div className="col-md-6 mx-auto">
-                        <input ref={this.createRefInputText} placeholder="Ingrese texto para cifrar la historia" className="form-control " type="text" id="inputText" />
+                        <input ref={this.createRefInputText} placeholder="Ingrese texto para cifrar la historia" className="form-control " type="text" id="inputText"/>
                         <span className="d-block text-warning text-center span" id="spanText"></span>
                     </div>
                     <div className="col-md-2 mx-auto my-3">
-                        <input ref = {this.createRefInputOffset} placeholder="N°" type="number" className="form-control" id="inputOffset"/>
+                        <input ref = {this.createRefInputOffset} placeholder="N°" type="number" className="form-control inputOffset" id="inputOffset" />
                         <span className="d-block text-warning text-center span" id="spanOffset"></span>
                     </div>
                     <div className="text-center">
