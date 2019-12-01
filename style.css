@@ -1,25 +1,29 @@
 .image {
     width: 90%;
     height: 90%;
-}
-.frase {
+    border-radius: 10px;
+  }
+  .frase {
     color: #ffffff;
     font-size: 15px;   
     letter-spacing: 3px;
-}
-.header{
+  }
+  .header{
     color: #9962B3;
-}
-.button {
+    font-size: 30px;
+    letter-spacing: 3px;
+  }
+  .button {
     width: 100px;
-}
-.aside{
+  }
+  .aside{
     background-color: #70cca0;
-}
-.label{
+  }
+  .label{
     color:  #9962B3;
    font-weight: bolder;
-}
-.span{
+  }
+  .span{
     font-size: 14px;
-}
+  }
+  
